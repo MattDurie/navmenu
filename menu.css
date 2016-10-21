@@ -4,6 +4,14 @@ Update ALL the named colours to create a monochromatic scheme
 Style the menus - one horizontally and one vertically
 Add the hover/active effects to your menu items
 ***************************************************/
+
+/*
+#506D1B - Mid Green
+#313A20 - Barely Green
+#182108 - Dark Green
+#5B6D3B - Muted Green
+#87BA2D - Forest Green
+*/
 *{
     padding: 0;
     margin: 0;
@@ -13,21 +21,21 @@ html{
     font-size: 16px;
     line-height: 1.6;
     /* ADD the Google sans-serif font to this font stack */
-    font-family: helvetica, arial, sans-serif;
+    font-family: 'Lato', arial, sans-serif;
 }
 html, body{
-    background-color: salmon;
+    background-color: #313A20 ;
 }
 h1{
     font-size: 6.854rem;
     /* ADD the Google serif font to this font stack */
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+    font-family: 'Bitter', 'Book Antiqua', Palatino, serif; 
     padding: 1rem 2rem;
 }
 h2{
     font-size: 4.23rem;
     /* ADD the Google serif font to this font stack */
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-family: 'Bitter', 'Book Antiqua', Palatino, serif;
     padding: 1rem 2rem;
 }
 nav li{
@@ -41,18 +49,23 @@ p{
     max-width: 1400px; 
     width: 80%;
     margin: 0 auto;
-    background-color: chartreuse;
-    color: rebeccapurple;
+    background-color: #87BA2D;
+    color: #182108;
 }
 header{
-    border-bottom: 0.8rem solid khaki;
-    background-color: cornflowerblue;
-    color: aliceblue;
+    border-bottom: 0.8rem solid #5B6D3B;
+    background-color: ##87BA2D;
+    color: #182108;
 }
 .menu-h{
     width: 100%;
 }
     .menu-h li{
+        display: inline;
+        list-style: none;
+        float: left;
+        width: 20%;
+       
         /* style the list items to remove the bullets 
         and line up horizontally
         and take up 20% of the width of the ul */
@@ -60,18 +73,26 @@ header{
         .menu-h a,
         .menu-h a:link,
         .menu-h a:visited{
+            display: block;
+            float: left;
+            padding: 0.5rem;
+            text-decoration: none;
+            color: #313A20;
             /* style the anchors to fill the entire width of the li 
             make sure there is padding around your text */
         }
         .menu-h a:hover,
         .menu-h a:active{
-            
+            text-decoration: underline;
+            color: #5B6D3B;
         }
 .menu-v{
     width: 20%;
     float:left;
 }
     .menu-v li{
+        list-style: none;
+        width: auto;
         /* style the list items to remove the bullets 
         and line up vertically
         and take up 100% of the width of the ul */
@@ -79,11 +100,14 @@ header{
         .menu-v a,
         .menu-v a:link,
         .menu-v a:visited{
+            width: auto;
+            color: #313A20;
             /* style the anchors to fill the entire width of the li */
         }
         .menu-v a:hover,
         .menu-v a:active{
-            
+            color: #182108;
+            text-decoration: none;
         }
 main{
     width:80%;
